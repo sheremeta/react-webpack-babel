@@ -1,1 +1,1 @@
-import FormContainer from "./js/components/container/FormContainer.jsx";
+import FeedbackForm from "./js/components/feedback/Form.jsx";
