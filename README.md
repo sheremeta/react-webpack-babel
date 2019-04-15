@@ -1,4 +1,5 @@
 # react-webpack-babel
+```
 yum install npm
 
 npm i webpack --save-dev
@@ -10,3 +11,4 @@ npm i html-webpack-plugin html-loader --save-dev
 npm i webpack-dev-server --save-dev
 
 npm start
+```
