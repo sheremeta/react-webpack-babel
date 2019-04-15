@@ -1,0 +1,16 @@
+target/
+dist/
+node_modules/
+
+**/.settings/
+**/.project
+**/.classpath
+**/.checkstyle
+**/*.eml
+
+**/.idea/
+**/*.ipr
+**/*.iml
+**/*.iws
+
+**/.DS_Store
