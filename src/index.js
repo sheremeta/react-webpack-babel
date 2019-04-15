@@ -1,1 +1,1 @@
-import FeedbackForm from "./js/components/feedback/Form.jsx";
+import ProductForm from "./js/components/product/Form.jsx";
