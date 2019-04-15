@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 class ProductCategoryRow extends React.Component {
     render() {
         const category = this.props.category;
+
         return (
             <tr>
                 <th colSpan="2">
@@ -20,8 +21,8 @@ class ProductRow extends React.Component {
         const name = product.stocked ?
             product.name :
             <span style={{color: 'red'}}>
-        {product.name}
-      </span>;
+                {product.name}
+            </span>;
 
         return (
             <tr>
@@ -57,8 +58,7 @@ class ProductTable extends React.Component {
             rows.push(
                 <ProductRow
                     product={product}
-                    key={product.name}
-                />
+                    key={product.name}/>
             );
             lastCategory = product.category;
         });
@@ -80,6 +80,7 @@ class ProductTable extends React.Component {
 class SearchBar extends React.Component {
     constructor(props) {
         super(props);
+
         this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
         this.handleInStockChange = this.handleInStockChange.bind(this);
     }
@@ -118,6 +119,7 @@ class SearchBar extends React.Component {
 class FilterableProductTable extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
             filterText: '',
             inStockOnly: false
@@ -165,7 +167,9 @@ const PRODUCTS = [
     {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
     {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
     {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
-    {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+    {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'},
+    {category: 'OIL', price: '$299.99', stocked: true, name: 'Shell'},
+    {category: 'OIL', price: '$99.99', stocked: true, name: 'BP'}
 ];
 
 ReactDOM.render(
