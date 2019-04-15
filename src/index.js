@@ -1,1 +1,1 @@
-import ProductForm from "./js/components/product/Form.jsx";
+import FilterableProductTable from "./js/components/product/FilterableProductTable.jsx";
